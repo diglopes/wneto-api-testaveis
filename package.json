@@ -2,9 +2,11 @@
   "name": "wneto-api-testaveis",
   "version": "1.0.0",
   "description": "API criada a partir do livro \"Criando APIs testáveis com Node.js\" do Waldemar Neto",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir dist",
+    "start": "npm run build && node dist/server.js",
+    "start:dev": "babel-node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,8 @@
     "@babel/core": "^7.11.1",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
