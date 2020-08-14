@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/diglopes/wneto-api-testaveis/issues"
   },
-  "homepage": "https://github.com/diglopes/wneto-api-testaveis#readme"
+  "homepage": "https://github.com/diglopes/wneto-api-testaveis#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0"
+  }
 }
